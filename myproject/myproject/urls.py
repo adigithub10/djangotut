@@ -19,7 +19,9 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
+    # this path is  inbuilt
     path('admin/', admin.site.urls),
+    # this path are built later
     path('' ,views.homepage),
     path('about',views.about),
 ]
