@@ -24,5 +24,5 @@ urlpatterns = [
     # this path are built later
     path('' ,views.homepage),
     path('about',views.about),
-    path('posts' , include('posts.urls'))
+    path('posts/' , include('posts.urls'))
 ]

@@ -1,12 +1,37 @@
 {% extends "layout.html" %}
 
 {% block title %} 
-      Posts List
+      POSTS
 
 {% endblock %}
 
 {% block content %}
- <h1>POsts Lists</h1>
+   <section>
+    <h1>Posts</h1>
+
+    {% comment %} adding a for loop {% endcomment %}
+    {% for post in posts %}
+    
+    <article class="post">
+      <h2>
+          {% comment %} <a href=" {% url "posts:page" slug=post.slug %}"> {% endcomment %}
+            {{ post.title }}
+
+
+          </a>
+      </h2>
+
+      <p>
+        {{post.date}}
+      </p>
+      <p>
+        {{post.body}}
+      </p>
+
+    </article>
+    
+    {% endfor %}
+   </section>
     
 {% endblock  %}
 
