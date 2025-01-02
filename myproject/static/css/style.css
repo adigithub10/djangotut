@@ -17,3 +17,13 @@ body{
 h1 ,p{
     text-align: center;
 }
+
+.newnav{
+    display: block;
+    background-color: rgb(154, 201, 201);
+    height: 4rem;
+    font-size:xl;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    
+}
